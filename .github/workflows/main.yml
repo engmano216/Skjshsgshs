@@ -1,4 +1,4 @@
-name: TECHNOVISION - LiteManager
+name: Programmingwithkumaresan
 
 on:
   workflow_dispatch:
@@ -12,11 +12,11 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri â€œhttps://gitlab.com/chamod12/lm_win-10_github_rdp/-/raw/main/Downloads.batâ€‌ -OutFile â€œDownloads.batâ€‌
+          Invoke-WebRequest -Uri "https://gitlab.com/chamod12/lm_win-10_github_rdp/-/raw/main/Downloads.bat" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
-      - name: TECHNOVISION 
+      - name: Connect to LiteManager
         run: cmd /c show.bat
 
-      - name: like and subscribe 
+      - name: Time Counter
         run: cmd /c loop.bat
